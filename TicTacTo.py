@@ -20,9 +20,8 @@ board = [
 ]
 
 def print_board():
-    print("- 1 2 3")
-    for idx, row in enumerate(board, start=1):
-        print(f"{idx} " + " ".join(str(cell) for cell in row))
+    for row in board:
+        print(" ".join(str(cell) for cell in row))
 
 print_board()
 
