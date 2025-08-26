@@ -9,4 +9,4 @@ Release 1.0
     it is untested on the calculator and I will run tests
 
 Hotfix 1.1
-    the code didn't work on the calculator but I removed some unnecessary stuff and hopefully it works now
+    - the code didn't work on the calculator but I removed some unnecessary stuff and hopefully it works now
