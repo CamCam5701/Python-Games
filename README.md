@@ -1,7 +1,9 @@
 ###This is a Tic Tac Toe game made in python with the .py file extension, this game is for the TI-84 Plus CE Python Calculator but will probably work with any calculator that supports python. Feel free to make commits as you may. Happy playing!
 
 #How to install
+
 This is an unoficial isntaltion guide for the TI-84 Plus CE Python
+
 ###1st Download the TI Connect CE software at https://education.ti.com/en/products/computer-software/ti-connect-ce-sw
 ###2nd Connect any and all calculators
 ###3rd Turn on your calcuator
