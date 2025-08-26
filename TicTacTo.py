@@ -1,6 +1,3 @@
-player1 = "O"
-player2 = "X"
-
 one_one = 0
 one_two = 0
 one_three = 0
@@ -38,63 +35,63 @@ if player1Turn:
     player1inputs = int(player1input1), int(player1input2)
     if player1inputs == (1, 1):
         if one_one == 0:
-            one_one = player1
+            one_one = "O"
             player1Turn = False
             Player2Turn = True
             rounds += 1
             print_board()
     elif player1inputs == (1, 2):
         if one_two == 0:
-            one_two = player1
+            one_two = "O"
             player1Turn = False
             Player2Turn = True
             rounds += 1
             print_board()
     elif player1inputs == (1, 3):
         if one_three == 0:
-            one_three = player1
+            one_three = "O"
             player1Turn = False
             Player2Turn = True
             rounds += 1
             print_board()
     elif player1inputs == (2, 1):
         if two_one == 0:
-            two_one = player1
+            two_one = "O"
             player1Turn = False
             Player2Turn = True
             rounds += 1
             print_board()
     elif player1inputs == (2, 2):
         if two_two == 0:
-            two_two = player1
+            two_two = "O"
             player1Turn = False
             Player2Turn = True
             rounds += 1
             print_board()
     elif player1inputs == (2, 3):
         if two_three == 0:
-            two_three = player1
+            two_three = "O"
             player1Turn = False
             Player2Turn = True
             rounds += 1
             print_board()
     elif player1inputs == (3, 1):
         if three_one == 0:
-            three_one = player1
+            three_one = "O"
             player1Turn = False
             Player2Turn = True
             rounds += 1
             print_board()
     elif player1inputs == (3, 2):
         if three_two == 0:
-            three_two = player1
+            three_two = "O"
             player1Turn = False
             Player2Turn = True
             rounds += 1
             print_board()
     elif player1inputs == (3, 3):
         if three_three == 0:
-            three_three = player1
+            three_three = "O"
             player1Turn = False
             Player2Turn = True
             rounds += 1
