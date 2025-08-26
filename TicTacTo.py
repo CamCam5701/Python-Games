@@ -1,12 +1,12 @@
-one_one = 0
-one_two = 0
-one_three = 0
-two_one = 0
-two_two = 0
-two_three = 0
-three_one = 0
-three_two = 0
-three_three = 0
+square1 = 0
+square2 = 0
+square3 = 0
+square4 = 0
+square5 = 0
+square6 = 0
+square7 = 0
+square8 = 0
+square9 = 0
 
 player1Turn = True
 Player2Turn = False
@@ -14,9 +14,9 @@ Player2Turn = False
 rounds = 0
 
 board = [
-    [one_one, one_two, one_three],
-    [two_one, two_two, two_three],
-    [three_one, three_two, three_three]
+    [square1, square2, square3],
+    [square4, square5, square6],
+    [square7, square8, square9]
 ]
 
 def print_board():
@@ -30,70 +30,82 @@ game_active = True
 
 # while game_active:
 if player1Turn:
-    player1input1 = input("It is player 1's turn, please enter the column number of an avalible space: ")
-    player1input2 = input("please enter the row number of an avalible space: ")
-    player1inputs = int(player1input1), int(player1input2)
-    if player1inputs == (1, 1):
-        if one_one == 0:
-            one_one = "O"
+    player1input = input("It is player 1's turn, please enter space 1-9: ")
+
+    print(player1input)
+
+    if player1input == "1":
+        if square1 == 0:
+            square1 = "O"
+            board[0][0] = "O"
             player1Turn = False
             Player2Turn = True
             rounds += 1
             print_board()
-    elif player1inputs == (1, 2):
-        if one_two == 0:
-            one_two = "O"
+    elif player1input == "2":
+        if square2 == 0:
+            square2 = "O"
+            board[0][1] = "O"
             player1Turn = False
             Player2Turn = True
             rounds += 1
             print_board()
-    elif player1inputs == (1, 3):
-        if one_three == 0:
-            one_three = "O"
+    elif player1input == "3":
+        if square3 == 0:
+            square3 = "O"
+            board[0][2] = "O"
             player1Turn = False
             Player2Turn = True
             rounds += 1
             print_board()
-    elif player1inputs == (2, 1):
-        if two_one == 0:
-            two_one = "O"
+    elif player1input == "4":
+        if square4 == 0:
+            square4 = "O"
+            board[1][0] = "O"
             player1Turn = False
             Player2Turn = True
             rounds += 1
             print_board()
-    elif player1inputs == (2, 2):
-        if two_two == 0:
-            two_two = "O"
+    elif player1input == "5":
+        if square5 == 0:
+            square5 = "O"
+            board[1][1] = "O"
             player1Turn = False
             Player2Turn = True
             rounds += 1
             print_board()
-    elif player1inputs == (2, 3):
-        if two_three == 0:
-            two_three = "O"
+    elif player1input == "6":
+        if square6 == 0:
+            square6 = "O"
+            board[1][2] = "O"
             player1Turn = False
             Player2Turn = True
             rounds += 1
             print_board()
-    elif player1inputs == (3, 1):
-        if three_one == 0:
-            three_one = "O"
+    elif player1input == "7":
+        if square7 == 0:
+            square7 = "O"
+            board[2][0] = "O"
             player1Turn = False
             Player2Turn = True
             rounds += 1
             print_board()
-    elif player1inputs == (3, 2):
-        if three_two == 0:
-            three_two = "O"
+    elif player1input == "8":
+        if square8 == 0:
+            square8 = "O"
+            board[2][1] = "O"
             player1Turn = False
             Player2Turn = True
             rounds += 1
             print_board()
-    elif player1inputs == (3, 3):
-        if three_three == 0:
-            three_three = "O"
+    elif player1input == "9":
+        if square9 == 0:
+            square9 = "O"
+            board[2][2] = "O"
             player1Turn = False
             Player2Turn = True
             rounds += 1
             print_board()
+    else:
+        print("ERROR - invalid input, please try again")
     
