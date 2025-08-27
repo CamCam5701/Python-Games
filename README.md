@@ -26,4 +26,3 @@ This is an unoficial isntaltion guide for the TI-84 Plus CE Python
 ### 6th Upload the updated Python file to you files and make sure it is under the ARCHIVE location (this should be by default by double check just to be sure)
 ### 7th On your calculator now click PRGM the Python App
 ### 8th Run any python script, this should re-install python to your calculator properly, if it already did this without you needing to run a script it'll still work and boom, you have updated your Python version on your calculator which may add more features and bug fixes that may be neccesary for the file to run
-
