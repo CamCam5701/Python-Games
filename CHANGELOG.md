@@ -17,3 +17,6 @@ Update 1.1
 
 Hotfox 1.1.1
     - Fixed a bug where you can’t put in inputs, this happened because I changed the board to hashtags but didn’t fix it for the actual player actions
+
+Update 1.2
+    - Made the text qrap so its look better on the calculator and made it so the the numbers on the calculator match the grid on the calculator for example, clicking 1 would put the move in the bottom left, same with doing the number 8, it would put it on the top middle
