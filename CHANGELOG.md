@@ -20,3 +20,6 @@ Hotfox 1.1.1
 
 Update 1.2
     - Made the text qrap so its look better on the calculator and made it so the the numbers on the calculator match the grid on the calculator for example, clicking 1 would put the move in the bottom left, same with doing the number 8, it would put it on the top middle
+
+Update 1.3
+    - Added a main menu for the game that includes, a start feature for the game, a tutorial that basically just shows how to input moves on the board on the calculator, and added links to the GitHub repo

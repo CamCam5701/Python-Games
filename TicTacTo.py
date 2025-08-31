@@ -8,6 +8,8 @@ square7 = "#"
 square8 = "#"
 square9 = "#"
 
+game_active = False
+
 player1Turn = True
 player2Turn = False
 
@@ -23,9 +25,53 @@ def print_board():
     for row in board:
         print(" ".join(str(cell) for cell in row))
 
-print_board()
+mainMenu = """
+Welcome to Tic Tac Toe
+Press 1 to start the game
+Press 2 to veiw the tutorial
+Press 3 to veiw links to the
+github repo
+Press 4 to exit
+"""
 
-game_active = True
+menuActive = True
+
+while menuActive:
+    print(mainMenu)
+    menuInput = input()
+
+    if menuInput == "1":
+        game_active = True
+        menuActive = False
+        print_board()
+    elif menuInput == "2":
+        print("""
+Player 1 is O and player 2 is X
+First player to get 3 in a row
+wins
+To place your piece, enter a
+number 1-9 that corresponds to
+the board space for example: 1
+would be the bottom left space
+and 9 would be the top right
+space etc.
+Press enter to return to the""")
+        input("main menu")
+    elif menuInput == "3":
+        linkInput = input("type 1 for full link link, type 2 for shorten link, or type 3 to return to the main menu: ")
+        if linkInput == "1":
+            print("https://github.com/CamCam5701/Tic-Tac-Toe")
+            input("""Press enter to return to the
+main menu""")
+        elif linkInput == "2":
+            print("https://rb.gy/0euqt4")
+            input("""Press enter to return to the
+main menu""")
+        elif linkInput == "3":
+            print("")
+    elif menuInput == "4":
+        menuActive = False
+
 
 while game_active:
     if rounds == 9:
