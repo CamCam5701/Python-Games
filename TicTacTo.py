@@ -49,7 +49,7 @@ Press 3 to veiw links to the
 github repo
 Press 4 to exit
 
-Version 1.4.1
+Version 1.4.2
 """
 
 menuActive = True
@@ -97,6 +97,8 @@ while game_active:
         plauer1Turn = False
         player2Turn = False
         game_active = False
+        break
+
     if player1Turn:
         print("It is player 1's turn, you are")
         print("O, please enter space 1-9: ")
@@ -184,12 +186,14 @@ while game_active:
         print("Player " + ("1" if winner == "O" else "2") + " wins!")
         input("Press enter to exit")
         game_active = False
+        break
 
     if rounds == 9:
         input("The game has ended! Press enter to exit")
         plauer1Turn = False
         player2Turn = False
         game_active = False
+        break
 
     if player2Turn:
         print("It is player 2's turn, you are")
@@ -278,3 +282,4 @@ while game_active:
         print("Player " + ("1" if winner == "O" else "2") + " wins!")
         input("Press enter to exit")
         game_active = False
+        break
