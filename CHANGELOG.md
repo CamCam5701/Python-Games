@@ -32,3 +32,6 @@ Bugfix 1.4.1
 
 Bugfix 1.4.2
     - Fixed a small bug where if player one wins the code will still ask for player 2's input after you enter an input and maybe fixed some other minor bugs
+
+Bugfix 1.4.3
+    - Fixed another small bug that prints the board twice if someone wins
