@@ -25,6 +25,22 @@ def print_board():
     for row in board:
         print(" ".join(str(cell) for cell in row))
 
+# win condition check
+
+def check_winner():
+    lines = []
+    for r in range(3):
+        lines.append([board[r][0], board[r][1], board[r][2]])
+    for c in range(3):
+        lines.append([board[0][c], board[1][c], board[2][c]])
+    lines.append([board[0][0], board[1][1], board[2][2]])
+    lines.append([board[0][2], board[1][1], board[2][0]])
+    for line in lines:
+        if line[0] == line[1] == line[2] and line[0] in ("O", "X"):
+            return line[0]
+
+# end win condition check
+
 mainMenu = """
 Welcome to Tic Tac Toe
 Press 1 to start the game
@@ -32,6 +48,8 @@ Press 2 to veiw the tutorial
 Press 3 to veiw links to the
 github repo
 Press 4 to exit
+
+Version 1.4
 """
 
 menuActive = True
@@ -158,6 +176,15 @@ while game_active:
 
     #---------------END OF PLAYER 1 TURN---------------
 
+    winner = check_winner()
+    if winner:
+        print("")
+        print_board()
+        print("")
+        print(f"Player {'1' if winner == 'O' else '2'} wins!")
+        input("Press enter to exit")
+        game_active = False
+
     if rounds == 9:
         input("The game has ended! Press enter to exit")
         plauer1Turn = False
@@ -240,3 +267,14 @@ while game_active:
                 print_board()
                 player1Turn = True
                 player2Turn = False
+    
+    #---------------END OF PLAYER 2 TURN---------------
+    
+    winner = check_winner()
+    if winner:
+        print("")
+        print_board()
+        print("")
+        print(f"Player {'1' if winner == 'O' else '2'} wins!")
+        input("Press enter to exit")
+        game_active = False
