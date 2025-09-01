@@ -1,4 +1,4 @@
-this readme file was last updated on 8/26/2025, if this has been a long time since then things may not be up to date and accurate
+this readme file was last updated on 8/31/2025, if this has been a long time since then things may not be up to date and accurate
 ### This is a Tic Tac Toe game made in python with the .py file extension, this game is for the TI-84 Plus CE Python Calculator but will probably work with any calculator that supports python. Feel free to make commits as you may. Happy playing!
 
 # How to install
