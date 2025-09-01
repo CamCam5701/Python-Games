@@ -49,7 +49,7 @@ Press 3 to veiw links to the
 github repo
 Press 4 to exit
 
-Version 1.4
+Version 1.4.1
 """
 
 menuActive = True
@@ -181,7 +181,7 @@ while game_active:
         print("")
         print_board()
         print("")
-        print(f"Player {'1' if winner == 'O' else '2'} wins!")
+        print("Player " + ("1" if winner == "O" else "2") + " wins!")
         input("Press enter to exit")
         game_active = False
 
@@ -275,6 +275,6 @@ while game_active:
         print("")
         print_board()
         print("")
-        print(f"Player {'1' if winner == 'O' else '2'} wins!")
+        print("Player " + ("1" if winner == "O" else "2") + " wins!")
         input("Press enter to exit")
         game_active = False

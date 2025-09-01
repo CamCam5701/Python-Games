@@ -8,14 +8,14 @@ Release 1.0
     The game works on PC!
     - It is untested on the calculator and I will run tests
 
-Hotfix 1.0.1
+Bugfix 1.0.1
     - The code didn't work on the calculator but I removed some unnecessary stuff and hopefully it works now
     - **EDIT** It works but there is no win condition but thats fine and exit() which is what people use to exit the program doesnt work but it still exits the program when the game is done so it still does the same thing the normal exit() would do except theres errors
 
 Update 1.1
     - Changed the boiard so when no one has claimed a spot is now hashtags, and just improved overall expirience
 
-Hotfox 1.1.1
+Bugfix 1.1.1
     - Fixed a bug where you can’t put in inputs, this happened because I changed the board to hashtags but didn’t fix it for the actual player actions
 
 Update 1.2
@@ -26,3 +26,6 @@ Update 1.3
 
 Update 1.4
     - Added win conditions so if either player gets 3 in a row the game ends, also added a version number the main menu which just says what game version you are on
+
+Bugfix 1.4.1
+    - Fixed a syntax error with the calculator not supporting f-strings
