@@ -35,3 +35,6 @@ Bugfix 1.4.2
 
 Bugfix 1.4.3
     - Fixed another small bug that prints the board twice if someone wins
+
+Update 1.4.4
+    - Updated the links to match the new GitHub name

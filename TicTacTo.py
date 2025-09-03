@@ -49,7 +49,7 @@ Press 3 to veiw links to the
 github repo
 Press 4 to exit
 
-Version 1.4.3
+Version 1.4.4
 """
 
 menuActive = True
@@ -78,11 +78,11 @@ Press enter to return to the""")
     elif menuInput == "3":
         linkInput = input("type 1 for full link link, type 2 for shorten link, or type 3 to return to the main menu: ")
         if linkInput == "1":
-            print("https://github.com/CamCam5701/Tic-Tac-Toe")
+            print("github.com/CamCam5701/Python-Games")
             input("""Press enter to return to the
 main menu""")
         elif linkInput == "2":
-            print("https://rb.gy/0euqt4")
+            print("tinyurl.com/camcam5701")
             input("""Press enter to return to the
 main menu""")
         elif linkInput == "3":
