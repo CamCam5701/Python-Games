@@ -1,3 +1,5 @@
+The tic tac toe changelog
+
 In-dev 0.0
     - The start of developing the code for the game
 
