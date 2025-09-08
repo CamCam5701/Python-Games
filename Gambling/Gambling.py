@@ -25,7 +25,7 @@ Press 2 for Coin Toss
 Press 0 to Exit
 You have $""" + str(money) + """
 
-Version 1.0""")
+Version 1.1""")
         gameSelction = input()
         if gameSelction == "1":
             game = True
@@ -116,4 +116,5 @@ Please try again!
                     input()
                     game = False
                     mainMenu = True
+                    gamblingCode = False
                     bet = 0
